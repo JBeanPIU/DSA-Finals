@@ -15,7 +15,7 @@ import java.util.stream.*;
 
 
 /**
- * The TreeCont class is used to handle all routing and HTTP processing for the HTML page. It
+ * TreeCont class is used to handle all routing and HTTP processing for the HTML page. It
  * is also the main class used to allow user input, input to BST conversion, and past-tree viewing.
  * Each of the routes scheming have been kept short (nums as opposed to numbers) to differentiate
  * the HTML templates and the back-end logic since back-end uses full naming.
