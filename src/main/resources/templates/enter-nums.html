@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<link rel="stylesheet" href="/css/style.css">
+<head>
+    <title>🌲 Enter Numbers 🌲</title>
+</head>
+<body>
+<h1>Binary Search Tree (BST) Generator</h1>
+
+<form action="/process-nums" method="post">
+    <label for="nums">Enter numbers (keep separated with spaces only):</label><br>
+    <input type="text" id="nums" name="nums" required><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<form action="/prev-trees" method="get">
+    <button type="submit">Show Previous Trees</button>
+</form>
+</body>
+</html>

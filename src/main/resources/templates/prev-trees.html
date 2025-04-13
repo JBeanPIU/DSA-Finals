@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<link rel="stylesheet" href="/css/style.css">
+<head>
+    <title>🌲 Previous Trees 🌲</title>
+</head>
+<body>
+<h1>Previously Generated Trees</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Input Numbers</th>
+        <th>Tree JSON</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tree : ${trees}">
+        <td th:text="${tree.id}">1</td>
+        <td th:text="${tree.inputNums}">1,2,3</td>
+        <td><pre th:text="${tree.treeJson}">[JSON]</pre></td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<a href="/enter-nums">Generate Another Tree</a>
+</body>
+</html>
